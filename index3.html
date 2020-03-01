@@ -20,7 +20,9 @@ function myfunction() {
         x.className = x.className.replace("w3-show","");
     }
 }
+
 </script>
+
 
 </head>
 
@@ -29,7 +31,7 @@ function myfunction() {
     <!--Navbar-->
     <nav class="w3-top w3-hide-small">
     <div class="w3-bar w3-blue-gray w3-card">
-            <a href="#" class="w3-bar-item w3-button w3-padding-large">Home</a>
+            <a href="#" class="w3-bar-item w3-button w3-black w3-padding-large">Home</a>
             <a href="#" class="w3-bar-item w3-button w3-padding-large">Band</a>
             <a href="#" class="w3-bar-item w3-button w3-padding-large">Tour</a>
             <a href="#" class="w3-bar-item w3-button w3-padding-large">Contact</a>
@@ -43,6 +45,16 @@ function myfunction() {
                   <a href="#"class="w3-bar-item w3-button">Media</a>
                 </div>
            </div>
+           <div class="w3-dropdown-hover">
+                <button class="w3-padding-large w3-button " title="Misc">Misc
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                 <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                   <a href="#"class="w3-bar-item w3-button">Credits</a>
+                   <a href="#"class="w3-bar-item w3-button">Contact</a>
+                  <a href="#"class="w3-bar-item w3-button">Social Media</a>
+                </div>
+           </div>
            <a href="http://google.com.au"class="w3-padding-large w3-hover-pale-blue w3-right">
            <i class="fa fa-search"></i></a>
     </div>
@@ -53,7 +65,7 @@ function myfunction() {
     <!--navbar on small screens-->
 <nav class="w3-top w3-hide-medium w3-hide-large"> 
 <div class="w3-bar w3-blue-gray w3-card">
-    <a href="index3.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="index3.html" class="w3-bar-item w3-button w3-black w3-padding-large">HOME</a>
         <a class="w3-bar-item w3-button w3-padding-large w3-right"  
         href="javascript:void(0)" onclick="myfunction()" title="Toggle Navigation Menu">
         <i class="fa fa-bars"></i>
@@ -70,6 +82,63 @@ function myfunction() {
 </div>
 </nav>
     <!--end of small navigation code-->
+
+        <!--Start of slide show content-->
+
+
+
+        <!-- Automatic Slideshow Images -->
+        <div class="mySlides w3-display-container w3-center">
+        <img src="/images/image01.jpg" style="width:100%">
+           <div class="w3-display-bottommiddle w3-container w3-text-red w3-padding-32 w3-hide-small">
+             <h1>Cascading Style sheets</h1>
+              <p>
+               <b>let the css flow</b></p>
+           </div>
+        </div>
+
+        <div class="mySlides w3-display-container w3-center">
+        <img src="/images/image02.jpg" style="width:100%">
+         <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+           <h1>Tiger Island</h1>
+            <p>
+             <b>Swimming with the tigers</b></p>
+          </div>
+          </div>
+
+            <div class="mySlides w3-display-container w3-center">
+        <img src="/images/image03.jpg" style="width:100%">
+         <div class="w3-display-bottommiddle w3-container w3-text-light-green w3-padding-32 w3-hide-small">
+           <h1>Sam Tocan</h1>
+            <p>
+             <b>Loves Fruit loops</b></p>
+          </div>
+          </div>
+
+<script>
+var myIndex= 0; // starts at the first photo in the array when page loads
+myCarousel(); // calls the function carousel automatically when the page is loads  
+
+function myCarousel() {
+
+    var i;
+        var x = document.getElementsByClassName("mySlides");
+    for (i=0; i <x.length; i++)  { //loop through the array and hide all photos
+        x[i].style.display="none";
+    }
+    
+    myIndex++;
+    if(myIndex > x.length) { //check if going past last photo
+        myIndex= 1 // goes back to the first photo when reaches the end
+    }
+            
+    x[myIndex - 1].style.display="block";  // displays each photo for 4 seconds
+        setTimeout(myCarousel, 2000);  //executes carousel, after waiting 4 seconds
+    }
+
+
+</script>
+
 
 
 
