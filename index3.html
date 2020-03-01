@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Daniel and the Solutions</title>
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="scripts.js">
+    </script>
+
+<script>    
+function myfunction() {
+    var x = document.getElementById("dropDown");
+    if (x.className.indexOf("w3-show") == -1) 
+        x.className += "w3-show";
+    } else { 
+        x.className = x.className.replace("w3-show","");
+    }
+}
+</script>
+
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <nav class="w3-top w3-hide-small">
+    <div class="w3-bar w3-black w3-card">
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Home</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Band</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Tour</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+            <div class="w3-dropdown-hover">
+                <button class="w3-padding-large w3-button " title="More">More
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                 <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                   <a href="#"class="w3-bar-item w3-button">Mercandise</a>
+                   <a href="#"class="w3-bar-item w3-button">Extras</a>
+                  <a href="#"class="w3-bar-item w3-button">Media</a>
+                </div>
+           </div>
+           <a href="http://google.com.au"class="w3-padding-large w3-hover-pale-blue w3-right">
+           <i class="fa fa-search"></i></a>
+    </div>
+    </nav>
+    <!--end of large navigation code-->
+
+
+    <!--navbar on small screens-->
+<nav class="w3-top w3-hide-medium w3-hide-large"> 
+<div class="w3-bar w3-black w3-card">
+    <a href="index3.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+        <a class="w3-bar-item w3-button w3-padding-large w3-right"  
+        href="javascript:void(0)" onclick="myfunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+           </a>
+            <div id="dropDown" class="w3-bar-block w3-black w3-hide" style="margin-top:50px">
+                <div class="w3-bar w3-black w3-card">
+                    <!--list of dropDown elements for navigation on small screen -->
+                <a href="#band" class="w3-bar-item w3-button w3-padding-large">Band</a>
+                <a href="#tour" class="w3-bar-item w3-button w3-padding-large">Tour</a>
+                <a href="#contact" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+                <a href="#merch" class="w3-bar-item w3-button w3-padding-large">Merch</a>
+                </div>
+            </div>
+</div>
+</nav>
+    <!--end of small navigation code-->
+
+
+
+
+</body>
+
+</html> 
