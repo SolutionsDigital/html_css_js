@@ -12,13 +12,14 @@
     </script>
 
     <script>
+        // show and hide the dropdown menu
         function myfunction() {
             var x = document.getElementById("dropDown");
-            if (x.className.indexOf("w3-show") == -1)
+            if (x.className.indexOf("w3-show") == -1) {
                 x.className += "w3-show";
-        } else {
-            x.className = x.className.replace("w3-show", "");
-        }
+            } else {
+                x.className = x.className.replace("w3-show", "");
+            }
         }
     </script>
 
@@ -29,8 +30,8 @@
 
     <!--Navbar-->
     <nav class="w3-top w3-hide-small">
-        <div class="w3-bar w3-blue-gray w3-card">
-            <a href="index.html" class="w3-bar-item w3-button w3-black w3-padding-large">Home</a>
+        <div class="w3-bar w3-black w3-card">
+            <a href="index.html" class="w3-bar-item w3-button w3-black w3-padding-large">HOME</a>
             <a href="band.html" class="w3-bar-item w3-button w3-padding-large">Band</a>
             <a href="tour.html" class="w3-bar-item w3-button w3-padding-large">Tour</a>
             <a href="contact.html" class="w3-bar-item w3-button w3-padding-large">Contact</a>
@@ -39,7 +40,7 @@
                         <i class="fa fa-caret-down"></i>
                     </button>
                 <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                    <a href="merch.html" class="w3-bar-item w3-button">Mercandise</a>
+                    <a href="merch.html" class="w3-bar-item w3-button">Merch</a>
                     <a href="extras.html" class="w3-bar-item w3-button">Extras</a>
                     <a href="media.html" class="w3-bar-item w3-button">Media</a>
                 </div>
@@ -62,8 +63,8 @@
 
     <!--navbar on small screens-->
     <nav class="w3-top w3-hide-medium w3-hide-large">
-        <div class="w3-bar w3-blue-gray w3-card">
-            <a href="index3.html" class="w3-bar-item w3-button w3-black w3-padding-large">HOME</a>
+        <div class="w3-bar w3-black w3-card">
+            <a href="index3.html" class="w3-bar-item w3-button w3-black w3-padding-large">Home</a>
             <a class="w3-bar-item w3-button w3-padding-large w3-right" href="javascript:void(0)" onclick="myfunction()" title="Toggle Navigation Menu">
                 <i class="fa fa-bars"></i>
             </a>
@@ -81,39 +82,34 @@
     <!--end of small navigation code-->
 
     <!--Start of slide show content-->
-<div class="w3-container">
-<h2> Digital Daniel and the Solutions</h2>
-</div>
+
+
+
     <!-- Automatic Slideshow Images -->
     <div class="mySlides w3-display-container w3-center">
-        <img src="images/band01.jpg" style="width:50%">
-        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-            <h2>Digital Dan and the Solutions</h2>
-                <h3>Band Leaders</h3>
+        <img src="images/image01.jpg" style="width:100%">
+        <div class="w3-display-bottommiddle w3-container w3-text-deep-orange w3-padding-32 w3-hide-small">
+            <h1>css</h1>
+            <p>
+                <b>Cascading Style Sheets</b></p>
         </div>
     </div>
 
     <div class="mySlides w3-display-container w3-center">
-        <img src="images/band02.jpg" style="width:50%">
+        <img src="images/image02.jpg" style="width:100%">
         <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-            <h2>Solutions Rythm Section </h2>
-                <h3>bass, drums and percussion</h3>
+            <h1>Tiger Island</h1>
+            <p>
+                <b>Swimming with the tigers</b></p>
         </div>
     </div>
 
     <div class="mySlides w3-display-container w3-center">
-        <img src="images/band03.jpg" style="width:50%">
+        <img src="images/image03.jpg" style="width:100%">
         <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-            <h2>Solutions Melody Makers </h2>
-                <h3>acoustic, lead guitar and keyboards</h3>
-        </div>
-    </div>
-
-    <div class="mySlides w3-display-container w3-center">
-        <img src="images/band04.jpg" style="width:50%">
-        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-            <h2>Digital Solutions Fans</h2>
-                <h3>Roadies, Fans and Goupies</h3>
+            <h1>Sam Tocan</h1>
+            <p>
+                <b>Loves Fruit loops</b></p>
         </div>
     </div>
 
@@ -135,12 +131,17 @@
             }
 
             x[myIndex - 1].style.display = "block"; // displays each photo for 4 seconds
-            setTimeout(myCarousel, 3000); //executes carousel, after waiting 4 seconds
+            setTimeout(myCarousel, 2000); //executes carousel, after waiting 4 seconds
         }
     </script>
 
 
 
+
+
+</body>
+
+</html>
 
 
 </body>
